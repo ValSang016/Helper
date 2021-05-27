@@ -6,9 +6,9 @@ class User {
     constructor(body) {
         this.body = body;
     }
-    login() {
+    async login() {
         const client = this.body;
-        const { id, psword } = UserStorage.getUserInfo(client.id);
+        const { id, psword } = await UserStorage.getUserInfo(client.id);   //await은 async함수 안에서만 쓸 수 있음
 
         if (id) {
             if (id ===client.id && psword === client.psword) {
