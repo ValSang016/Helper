@@ -11,11 +11,13 @@ registerBtn.addEventListener("click", register);
 
 
 function register() {
-    if (!id.value) return alert("아이디를 입력해주십시오.")
-    if (psword.value !== confirmPsword.value) return alert("비밀번호가 일치하지 않습니다.")
+    if (!id.value) return alert("아이디를 입력해주십시오.");
+    if (!psword.value) return alert("비밀번호를 입력해주십시오.");
+    if (psword.value !== confirmPsword.value) return alert("비밀번호가 일치하지 않습니다.");
+
     const req = {
-        name: name.value,
         id: id.value,
+        name: name.value,
         psword: psword.value,
     };
 
@@ -30,7 +32,9 @@ function register() {
     .then((res) => {
         if (res.success) {
             location.href = "/login";
+            alert("회원가입을 성공하였습니다.");
         } else {
+            if (res.err) return alert(res.err);
             alert(res.msg);
         }
     })   
