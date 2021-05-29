@@ -1,0 +1,7 @@
+{
+    "connectionLimit": 5,
+    "host": "login-lectures11.c5ok6hulvbab.ap-northeast-2.rds.amazonaws.com",
+    "user": "admin",
+    "password": "rina1315",
+    "database": "post"
+}

@@ -1,6 +1,6 @@
 "use strict";
 
-const User = require("../../models/User");
+const User = require("../models/User");
 
 const output = {
     home: (req, res) => {
