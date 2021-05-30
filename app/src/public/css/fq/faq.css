@@ -1,0 +1,68 @@
+.col2 {
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+  }
+  
+  /*
+    Copy from here downwards
+  */
+  
+  .qna {
+    height: 200px;
+  }
+  
+  .qna .box.text {
+    padding: 20px 50px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .qna .box.text > h2 {
+    text-align: center;
+    position: relative;
+  }
+  
+  
+  .qna .box.text > h2:before {
+    content: "Q. ";
+  }
+  
+  .qna .box.text > .box_content {
+    overflow: hidden;
+    padding: 0 50px;
+  }
+  
+  .qna .box.text > .box_content p:first-of-type:before {
+    content: "A. ";
+    font-weight: bold;
+  }
+
+
+
+
+
+
+.icon1 i {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    text-align: center;
+    line-height: 100px;
+    background-color: #fd7878;
+    color: #fff;
+    font-size: 32px;
+}
+.icon2 i {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    text-align: center;
+    line-height: 100px;
+    background-color: #f33f3f;
+    color: #fff;
+    font-size: 32px;
+}
+/* //UI Object */

@@ -18,7 +18,13 @@
         <div></div>
     </div>
 </div>
-
+<% if(session.login){ %>
+  <h3>로그인에 성공하셨습니다 ~</h3>
+  <form action="/logout" method="get">
+      <input type="submit" value="로그아웃">
+  </form>
+  
+<% } else{ %>
   <div class="login-page">
         <div class="form">
           <form class="login-form">
@@ -29,7 +35,7 @@
           </form>
         </div>
       </div>
-
+    <% } %>
 
 <!-- Bootstrap core JavaScript -->
 <script src="vendor/jquery/jquery.min.js"></script>

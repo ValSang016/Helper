@@ -1,0 +1,39 @@
+/* UI Object */
+
+.write{
+    width:100%;
+    border-left: 0;
+    border-right: 0;
+    border-bottom:1px solid #999;
+    color:#666;
+    font-size:18px;
+    table-layout:fixed;
+}
+.write .tag {
+    padding: 10px 10px 0px 20px;
+    font-size: 20px;
+}
+
+
+
+.icon1 i {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    text-align: center;
+    line-height: 100px;
+    background-color: #fd7878;
+    color: #fff;
+    font-size: 32px;
+}
+.icon2 i {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    text-align: center;
+    line-height: 100px;
+    background-color: #f33f3f;
+    color: #fff;
+    font-size: 32px;
+}
+/* //UI Object */

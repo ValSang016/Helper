@@ -2,18 +2,23 @@
 
 const UserStorage = require("./UserStorage");
 
+
 class User {
-    constructor(body) {
+    constructor(body, cok) {
         this.body = body;
+        this.cok = cok;
     }
     async login() {
         const client = this.body;
+        const cok = this.cok;
         try {
         const user = await UserStorage.getUserInfo(client.id);   //await은 async함수 안에서만 쓸 수 있음
 
         if (user) {
             if (user.id ===client.id && user.psword === client.psword) {
-                return { success: true };
+                cok.session.login = true
+                cok.session.idx = client.id;
+                return { success: true, session: cok.session.login };
             }
             return { success: false, msg: "비밀번호가 틀렸습니다." };
         }

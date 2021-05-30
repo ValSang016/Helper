@@ -1,0 +1,84 @@
+/* UI Object */
+.tbl_type,.tbl_type th,.tbl_type td{
+    border:0;
+}
+.tbl_type a{
+    color:#383838;text-decoration:none;
+}
+.tbl_type{
+    width:100%;
+    border-bottom:1px solid #999;
+    color:#666;
+    font-size:12px;
+    table-layout:fixed;
+}
+.tbl_type th{
+    padding:20px 0 20px 0px;
+    border-top:solid 1px #999;
+    border-bottom:solid 1px #b2b2b2;
+    background-color:#f1f1f4;
+    color:#333;
+    font-weight:bold;
+    line-height:18px;
+    vertical-align:top;
+    text-align: center;
+    font-size: 20px;
+}
+.tbl_type td{
+    padding:10px 0 10px 0px;
+    border-bottom:solid 1px #d2d2d2;
+    text-align:center;
+    font-size:15px;
+}
+.tbl_type.num,.tbl_type.hit{
+    padding:0;
+    font-family:Tahoma;
+    font-size:20px;
+    line-height:normal;
+}
+#title {
+    color: #f33f3f!important;
+    font-weight: bold;
+}
+.tbl_type .title{
+    text-align:center;
+}
+.tbl_type .content {
+    text-align: inherit;
+    padding: 30px 20px 30px 20px;
+}
+#returetoboard {
+    text-align: right;
+    padding-top: 10px;
+    padding-right: 20px;
+    font-size: 20px;
+}
+
+
+
+#list {
+    display: inline-block;
+    height: 500px;
+    margin: 0 50px 50px 50px;
+}
+.icon1 i {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    text-align: center;
+    line-height: 100px;
+    background-color: #fd7878;
+    color: #fff;
+    font-size: 32px;
+}
+.icon2 i {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    text-align: center;
+    line-height: 100px;
+    background-color: #f33f3f;
+    color: #fff;
+    font-size: 32px;
+}
+/* //UI Object */

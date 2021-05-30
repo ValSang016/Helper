@@ -8,12 +8,13 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
-
+  
     
     <title>HTML Template</title>
 
     <!-- Bootstrap core CSS -->
     <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 <!--
 
 TemplateMo 546 Sixteen Clothing
@@ -27,7 +28,7 @@ https://templatemo.com/tm-546-sixteen-clothing
     <link rel="stylesheet" href="/fontawesome-free-5.15.3-web/css/all.css">
     <link rel="stylesheet" href="/assets/css/templatemo-sixteen.css">
     <link rel="stylesheet" href="/assets/css/owl.css">
-    <link rel='stylesheet' href="/css/board/list.css"/>
+    <link rel='stylesheet' href="/css/fq/faq.css"/>
   </head>
 
   <body>
@@ -104,8 +105,8 @@ https://templatemo.com/tm-546-sixteen-clothing
         <div class="row">
           <div class="col-4">
             <div class="notice">
-              <div class="icon1">
-                <a href="#notice"><i class="fas fa-exclamation"></i></a>
+              <div class="icon2">
+                <a href="/board"><i class="fas fa-exclamation"></i></a>
               </div>
               <div class="down-content">
                 <h4>NOTICE</h4>
@@ -124,8 +125,8 @@ https://templatemo.com/tm-546-sixteen-clothing
           </div>
           <div class="col-4">
             <div class="notice">
-              <div class="icon2">
-                <a href="#"><i class="fas fa-question"></i></a>
+              <div class="icon1">
+                <a href="/fq"><i class="fas fa-question"></i></a>
               </div>
               <div class="down-content">
                 <h4>FAQ</h4>
@@ -133,49 +134,53 @@ https://templatemo.com/tm-546-sixteen-clothing
             </div>
           </div>
 
-        <div id="list">
-            <table cellspacing="0" border="1" summary="게시판의 글제목 리스트" class="tbl_type">
-                <colgroup>
-                    <col width="10%">
-                    <col width="20%">
-                    <col width="50%">
-                    <col width="20%">
-                </colgroup>
-                <thead>
-                    <tr>
-
-                        <th>No</th>
-                        <th>작성자</th>
-                        <th>제목</th>
-                        <th>조회수</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <% for(var i=0; i < rows.length; i++){ var oneItem=rows[i]; %>
-                        <tr>
-                            <td class="num">
-                                <%=oneItem.idx%>
-                            </td>
-                            <td>
-                                    <%=oneItem.creator_id%>
-                                </a></td>
-                            <td class="title"><a id="title" href="/board/read/<%=oneItem.idx%>">
-                                    <%=oneItem.title%>
-                                </a></td>
-                            <td class="hit">
-                                <%=oneItem.hit%>
-                            </td>
-                        </tr>
-                        <% } %>
-                </tbody>
-            </table>
-            <br>
-            <br>
+        <div class="custom_page_123"></div>
+            <div class="col col2" id="col2">
+                <div id="boxholder_1">
+                    <h2>Questions and Answers</h2>
+                    <div class="box_content">
+                    </div>
+                    <div class="clear">
+                        <!--space-->
+                    </div>
+                </div>
+                <br>
+                <div id="boxholder_2" class="box cpbox text">
+                    <h2>Why am I asking such a strange question?&nbsp;<i class="fas fa-sm fa-chevron-down"></i></h2>
+                    <div class="box_content">
+                        <p>Felis ultrices ac erat duis diam vestibulum scelerisque nisi condimentum praesent mus torquent
+                            suspendisse ullamcorper mi nam diam consectetur mi fusce adipiscing ad platea.Faucibus natoque
+                            quisque facilisi justo vestibulum dolor ullamcorper hac parturient risus nunc eu ad taciti phasellus
+                            a vestibulum malesuada at et parturient.A duis aliquet conubia vitae semper ut scelerisque a semper
+                            adipiscing vestibulum id nullam condimentum suspendisse phasellus vestibulum proin vivamus
+                            scelerisque.Augue est.</p>
+                    </div>
+                    <div class="clear">
+                        <!--space-->
+                    </div>
+                </div>
         
-            <a href="/board/write">글쓰기</a>
+                <div id="boxholder_2" class="box cpbox text">
+                    <h2>Why am I asking such a strange question?&nbsp;<i class="fas fa-sm fa-chevron-down"></i></h2>
+                    <div class="box_content">
+                        <p>Felis ultrices ac erat duis diam vestibulum scelerisque nisi condimentum praesent mus torquent
+                            suspendisse ullamcorper mi nam diam consectetur mi fusce adipiscing ad platea.Faucibus natoque
+                            quisque facilisi justo vestibulum dolor ullamcorper hac parturient risus nunc eu ad taciti phasellus
+                            a vestibulum malesuada at et parturient.A duis aliquet conubia vitae semper ut scelerisque a semper
+                            adipiscing vestibulum id nullam condimentum suspendisse phasellus vestibulum proin vivamus
+                            scelerisque.Augue est.</p>
+                    </div>
+                    <div class="clear">
+                        <!--space-->
+                    </div>
+                </div>
+        
+               
+            </div>
+ 
         </div>
-      </div>
     </div>
+
     <footer>
       <div class="container">
         <div class="row">
@@ -202,6 +207,7 @@ https://templatemo.com/tm-546-sixteen-clothing
     <script src="/assets/js/slick.js"></script>
     <script src="/assets/js/isotope.js"></script>
     <script src="/assets/js/accordions.js"></script>
+    <script src="/js/fq/faq.js"></script>
 
 
     <script language = "text/Javascript">
