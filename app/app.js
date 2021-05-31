@@ -15,7 +15,9 @@ const app = express();
 //라우트
 const home = require("./src/routes/home/index");
 const fq = require("./src/routes/fq/fq");
+const qna = require("./src/routes/qna/qna");
 const board = require("./src/routes/board/board");
+
 
 //앱세팅
 app.set("views", "./src/views");
@@ -41,7 +43,8 @@ app.use(session({
 
 //use -> 미들 웨어를 등록해주는 
 app.use("/", home); 
-app.use("/fq", fq); 
+app.use("/fq", fq);
+app.use("/qna", qna); 
 app.use('/board', board);
 
 

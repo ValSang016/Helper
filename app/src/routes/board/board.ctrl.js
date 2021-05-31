@@ -91,7 +91,7 @@ const process = {
                 if(err) console.error("err : "+err);
                 console.log("rows : "+JSON.stringify(rows));
     
-                res.redirect('/board');
+                res.redirect('/admin/list/1');
                 connection.release();
             });
         });
@@ -117,7 +117,7 @@ const process = {
                     res.send("<script>alert('패스워드가 일치하지 않거나, 잘못된 요청으로 인해 값이 변경되지 않았습니다.');history.back();</script>");
                 }
                 else{
-                    res.redirect('/board/read/'+idx);
+                    res.redirect('/admin/read/'+idx);
                 }
                 connection.release();
             });
@@ -135,7 +135,7 @@ const process = {
                 console.log(result);
                 if(err) console.error("글 삭제 중 에러 발생 err : ",err);
                
-                res.redirect('/board/');
+                res.redirect('/admin/list/1');
                
                 connection.release();
             });

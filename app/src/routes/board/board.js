@@ -13,9 +13,7 @@ router.get('/write', ctrl.output.write);
 //글 불러오기
 router.get('/read/:idx', ctrl.output.read);
 //글 수정 화면 표시 GET
-router.get('/update', ctrl.output.update);
-//글 삭제 화면 표시 GET
-router.get('/delete', ctrl.output.delete);
+
 
 
 

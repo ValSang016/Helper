@@ -18,7 +18,7 @@ class User {
             if (user.id ===client.id && user.psword === client.psword) {
                 cok.session.login = true
                 cok.session.idx = client.id;
-                return { success: true, session: cok.session.login };
+                return { success: true, session: cok.session.login, id: cok.session.idx };
             }
             return { success: false, msg: "비밀번호가 틀렸습니다." };
         }
