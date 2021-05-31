@@ -20,13 +20,14 @@ router.get("/admin/update", checkPermission, ctrl.output.adupdate);
 router.get("/admin/delete", checkPermission, ctrl.output.addelete); 
 
 
-
 router.post("/login", ctrl.process.login);
 router.post("/register", ctrl.process.register);
 
 
   module.exports = router;
 
+
+  //특정아이디로만 접속가능하게 함/관리자 아이디
   function checkPermission(req, res, next){
     if(req.session.idx != '202031872') 
     return util.noPermission(req, res);

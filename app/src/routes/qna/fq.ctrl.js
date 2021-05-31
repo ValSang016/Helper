@@ -83,7 +83,7 @@ const process = {
 
         var title = req.body.title;
         var content = req.body.content;
-        var creator_id = req.body.id;
+        var creator_id = req.body.creator_id;
         var passwd = req.body.passwd;
         var datas = [title, content, creator_id, passwd];
     

@@ -8,7 +8,7 @@ var pool = require("../../config/db2");
 const output = {
     qna: (req, res, next) => {
         // board/ 로 접속할 경우 전체 목록 표시로 리다이렉팅
-        res.redirect("/qna/list");
+        res.render("fq/faq");
     },
 };
 
